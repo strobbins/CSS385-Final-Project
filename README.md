@@ -2,7 +2,7 @@
 
 ## Project Info
 
-**Team Name:** The Pretty Little Princesses
+**Team Name:** The Pretty Little Princesses (Fantasy 19)
 
 **Team Members:** Sarah Robbins, Dakota Sagredo, & Rachael Tustison
 
