@@ -11,6 +11,7 @@ public class Deathzone : MonoBehaviour {
 
 	// When player touches collider, teleport player to respawn point
 	void OnTriggerEnter2D(Collider2D col) {
-		player.transform.position = respawnPoint.transform.position;
+		if (col.gameObject.CompareTag("Player"))
+			player.transform.position = respawnPoint.transform.position;
 	}
 }

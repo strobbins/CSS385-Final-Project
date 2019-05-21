@@ -1,8 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CSS 385\Scripts\PendulumPhysics.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CSS 385\Scripts\GravitySwap.cs">
     <Files>
-      <File FileName="Assets\CSS 385\Scripts\PendulumPhysics.cs" Line="39" Column="3" />
+      <File FileName="Assets\CSS 385\Scripts\PendulumPhysics.cs" Line="1" Column="1" />
+      <File FileName="Assets\UnityPlayground\Scripts\Movement\Move.cs" Line="1" Column="1" />
+      <File FileName="Assets\UnityPlayground\Scripts\Movement\CameraFollow.cs" Line="1" Column="1" />
+      <File FileName="Assets\UnityPlayground\Scripts\Movement\Jump.cs" Line="35" Column="31" />
+      <File FileName="Assets\CSS 385\Scripts\Gravity.cs" Line="38" Column="41" />
+      <File FileName="Assets\CSS 385\Scripts\AttachPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\CSS 385\Scripts\Deathzone.cs" Line="15" Column="52" />
+      <File FileName="Assets\CSS 385\Scripts\Water.cs" Line="1" Column="1" />
+      <File FileName="Assets\CSS 385\Scripts\GravitySwap.cs" Line="16" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

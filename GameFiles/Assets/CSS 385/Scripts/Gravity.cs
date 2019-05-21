@@ -7,14 +7,27 @@ public class Gravity : MonoBehaviour {
 	private Rigidbody2D rb;
 	private bool top; // For flipping the orientation of the character when gravity is flipped
 
+	public string groundTag = "Ground";
+	public bool checkGround = true;
+	private bool canSwitchGrav = true;
+
+
 	void Start() {
 		rb = GetComponent<Rigidbody2D> (); // Initialize rigidbody
 	}
 
 	void Update() {
-		if (Input.GetKeyDown (KeyCode.LeftShift)) {
+		if (canSwitchGrav && Input.GetKeyDown (KeyCode.LeftShift)) {
 			rb.gravityScale *= -1;
 			Rotation (); // Calls rotation method
+			canSwitchGrav = !checkGround;
+		}
+	}
+
+	private void OnCollisionEnter2D(Collision2D col)
+	{
+		if(checkGround && col.gameObject.CompareTag(groundTag)) {
+			canSwitchGrav = true;
 		}
 	}
 
