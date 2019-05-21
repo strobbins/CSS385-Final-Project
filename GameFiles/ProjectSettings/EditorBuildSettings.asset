@@ -5,21 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/CSS 385/Scenes/MainMenu.unity
+    guid: e860b3ef0a8fb1c4286569f53ae20315
+  - enabled: 1
+    path: Assets/Free Asset - 2D Handcrafted Art/DemoScene.unity
+    guid: d30fbee988f498842a6e22beea9f1786
+  - enabled: 1
+    path: Assets/CSS 385/Scenes/Digital1.unity
+    guid: 8d78795daf2583e44a8b838a92ad16a3
+  - enabled: 1
+    path: Assets/CSS 385/Scenes/Digital2.unity
+    guid: 00124d683d88a4543ac62c6b801fa96f
+  - enabled: 1
+    path: Assets/CSS 385/Scenes/Digital3.unity
+    guid: 6df8ecb85772b5045a5f756e8147349b

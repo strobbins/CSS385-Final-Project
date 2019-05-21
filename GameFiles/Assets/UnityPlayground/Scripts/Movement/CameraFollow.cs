@@ -31,7 +31,7 @@ public class CameraFollow : MonoBehaviour
 			// Find the right position between the camera and the object
 			lerpedPosition = Vector3.Lerp(transform.position, target.position, Time.deltaTime * 10f);
 			lerpedPosition.z = -20f;
-			//lerpedPosition.y = 1f;
+			//lerpedPosition.y = -10f;
 		}
 	}
 
