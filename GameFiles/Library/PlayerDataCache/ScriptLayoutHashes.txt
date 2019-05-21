@@ -1,19 +1,26 @@
 WebGL
 PlayerPath?
-C:/Users/srobb/Documents/CSS 385/CSS385-Final-Project/GameFiles/WebGL
+C:/Users/srobb/Documents/CSS 385/CSS385-Final-Project
 SceneListBegin?
+Assets/CSS 385/Scenes/MainMenu.unity
 Assets/Free Asset - 2D Handcrafted Art/DemoScene.unity
+Assets/CSS 385/Scenes/Digital1.unity
+Assets/CSS 385/Scenes/Digital2.unity
+Assets/CSS 385/Scenes/Digital3.unity
 SceneListEnd?
 6eb1ba5e580b81147e273919404d8491 Assembly-CSharp.dll:.PickUpAndHold
 24fe2d1b2ab2a9286bfb69bb75957d0d Assembly-CSharp.dll:.ModifyHealthAttribute
 ef810135a78670affc10b887a9d5e720 Assembly-CSharp.dll:.ObjectShooter
 abd63ffccc88a1336cd00ddd0f8189f0 Assembly-CSharp.dll:.ConsumeResourceAction
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Gravity
+52c93aef726a1f2e359f7e7a48e23e9f Assembly-CSharp.dll:.Gravity
 8b37e2bedcd2e42496a240c5ade52ac0 Assembly-CSharp.dll:.UIItemScript
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenuPlay
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenuD2
 1708c6a53572f02a61c6ac5ad7d99750 Assembly-CSharp.dll:.ConditionRepeat
 85ef7d76551efbc56911d40f501b5304 Assembly-CSharp.dll:.TeleportAction
 6eb95b2ca88baf06e337975c224de2a2 Assembly-CSharp.dll:.BalloonScript
 f0ea1f5b3c1f4c086a417bfdd1afb908 Assembly-CSharp.dll:.ResourceAttribute
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenuD1
 e7ced6492e9c57ea2d06cc2694771449 Assembly-CSharp.dll:.LoadLevelAction
 64d75a6afdcd5be84fffaa7c445cab32 Assembly-CSharp.dll:.ConditionCollision
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
@@ -29,6 +36,7 @@ e2ae883899eb227450612df663d58b42 Assembly-CSharp.dll:.Rotate
 2497222bf349640c76bee3a1da9ce2c4 Assembly-CSharp.dll:.DialogueBalloonAction
 4d1404b53e0c81a5a1dd9f8e79f57774 Assembly-CSharp.dll:.BulletAttribute
 d8a3e991d8b600cc6a5c0ee2eaa4b6db Assembly-CSharp.dll:.CreateObjectAction
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GravitySwap
 e5a51ae3142dd78050e63b2110bdaf39 Assembly-CSharp.dll:.Push
 2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.AttachPlayer
 c6530cd2187c01048ecc5c2bbda913e3 Assembly-CSharp.dll:.FollowTarget
@@ -41,6 +49,7 @@ ada3297ae84c0f6af1e9e2f0f2d7b9ac Assembly-CSharp.dll:.AutoRotate
 aa3c2988193b0de7c2ed925216fb40ac Assembly-CSharp.dll:.CollectableAttribute
 9512805ca3a27e2f1d48f6a254cfc420 Assembly-CSharp.dll:.OnOffAction
 05045cb329cccc0ef7abba9f216c83a2 Assembly-CSharp.dll:.ConditionKeyPress
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenuD3
 6943ff98d54024984b54cf7860c9fc7b Assembly-CSharp.dll:.Patrol
 d6b25bcb69897cbab85d1dc1bc0facd1 Assembly-CSharp.dll:.DestroyAction
 b3d0f381d2f5f64bd105fb0103151f71 Assembly-CSharp.dll:.DialogueSystem
