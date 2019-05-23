@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/CSS 385/Scenes/Digital3.unity
-  isLoaded: 1
-  isActive: 1
