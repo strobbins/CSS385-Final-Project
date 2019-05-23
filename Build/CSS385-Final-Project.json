@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "385 Final Project",
+"dataUrl": "CSS385-Final-Project.data.unityweb",
+"asmCodeUrl": "CSS385-Final-Project.asm.code.unityweb",
+"asmMemoryUrl": "CSS385-Final-Project.asm.memory.unityweb",
+"asmFrameworkUrl": "CSS385-Final-Project.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#292728"
+}

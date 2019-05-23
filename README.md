@@ -9,3 +9,5 @@
 **Project working title:** Pachycephalosaurus
 
 **[Development Log](https://strobbins.github.io/)**
+
+**[Development Log repository](https://github.com/strobbins/strobbins.github.io)**
