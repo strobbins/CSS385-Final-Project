@@ -8,10 +8,19 @@ public class Deathzone : MonoBehaviour {
 	// keeping the variable private, so it can't be accessed elsewhere
 	[SerializeField] private Transform player;
 	[SerializeField] private Transform respawnPoint;
+	public string enemyTag = "Enemy";
 
-	// When player touches collider, teleport player to respawn point
 	void OnTriggerEnter2D(Collider2D col) {
-		if (col.gameObject.CompareTag("Player"))
-			player.transform.position = respawnPoint.transform.position;
+		if (col.gameObject.CompareTag ("Player")) {
+			player.transform.position = respawnPoint.transform.position; // Teleport player to respawn point
+			player.GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.FreezeAll; // Freeze player movement
+			Physics2D.gravity = new Vector2 (0f, -9.81f); // Reset gravity
+			player.GetComponent<Rigidbody2D> ().velocity = Vector2.zero; // Reset velocity
+			player.GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.None; // Unfreeze movement
+			player.GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.FreezeRotation; // Refreeze rotation
+		}
+
+		if (col.gameObject.CompareTag (enemyTag)) // For the slamming walls
+			FindObjectOfType<AudioManager>().Play("Slam"); // Plays the audio clip
 	}
 }

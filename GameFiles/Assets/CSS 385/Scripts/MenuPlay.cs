@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuPlay : MonoBehaviour {
 
 	public void PlayGame() {
+		FindObjectOfType<AudioManager>().Play("Menu Button Click"); // Plays the audio clip
 		SceneManager.LoadScene ("DemoScene");
 	}
 }

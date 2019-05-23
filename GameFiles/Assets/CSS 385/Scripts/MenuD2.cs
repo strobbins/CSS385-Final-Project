@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuD2 : MonoBehaviour {
 
 	public void PlayGame() {
+		FindObjectOfType<AudioManager>().Play("Menu Button Click"); // Plays the audio clip
 		SceneManager.LoadScene ("Digital2");
 	}
 }

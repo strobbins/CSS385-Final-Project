@@ -11,16 +11,30 @@ public class Gravity : MonoBehaviour {
 	public bool checkGround = true;
 	private bool canSwitchGrav = true;
 
-
-	void Start() {
-		rb = GetComponent<Rigidbody2D> (); // Initialize rigidbody
-	}
-
 	void Update() {
-		if (canSwitchGrav && Input.GetKeyDown (KeyCode.LeftShift)) {
-			rb.gravityScale *= -1;
+		if (canSwitchGrav && Input.GetKeyDown (KeyCode.LeftShift) && Physics2D.gravity.y == -9.81f) { // Gravity is pulling down
+			Physics2D.gravity = new Vector2 (0f, 9.81f);
 			Rotation (); // Calls rotation method
 			canSwitchGrav = !checkGround;
+			FindObjectOfType<AudioManager>().Play("Gravity Flip"); // Plays the audio clip
+		} 
+		if (canSwitchGrav && Input.GetKeyDown (KeyCode.LeftShift) && Physics2D.gravity.y == 9.81f) { // Gravity is pulling up
+			Physics2D.gravity = new Vector2(0f, -9.81f);
+			Rotation (); // Calls rotation method
+			canSwitchGrav = !checkGround;
+			FindObjectOfType<AudioManager>().Play("Gravity Flip"); // Plays the audio clip
+		}
+		if (canSwitchGrav && Input.GetKeyDown (KeyCode.LeftShift) && Physics2D.gravity.x == -9.81f) { // Gravity is pulling left
+			Physics2D.gravity = new Vector2 (9.81f, 0f);
+			Rotation (); // Calls rotation method
+			canSwitchGrav = !checkGround;
+			FindObjectOfType<AudioManager>().Play("Gravity Flip"); // Plays the audio clip
+		} 
+		if (canSwitchGrav && Input.GetKeyDown (KeyCode.LeftShift) && Physics2D.gravity.x == 9.81f) { // Gravity is pulling right
+			Physics2D.gravity = new Vector2(-9.81f, 0f);
+			Rotation (); // Calls rotation method
+			canSwitchGrav = !checkGround;
+			FindObjectOfType<AudioManager>().Play("Gravity Flip"); // Plays the audio clip
 		}
 	}
 
@@ -34,7 +48,8 @@ public class Gravity : MonoBehaviour {
 	void Rotation() { 
 		if (top == false) { // If gravity is flipped, rotate 180 degrees
 			transform.eulerAngles = new Vector3 (0, 0, 180);
-		} else {
+		} 
+		else {
 			transform.eulerAngles = Vector3.zero;
 		}
 		top = !top; // Sets it to the opposite of the initial value when function is called
