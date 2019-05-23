@@ -5,6 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Jump : Physics2DObject
 {	
+	
 	[Header("Jump setup")]
 	// the key used to activate the push
 	public KeyCode key = KeyCode.Space;
@@ -26,14 +27,22 @@ public class Jump : Physics2DObject
 	void Update() {
 		if(canJump && Input.GetKeyDown(key)) {
 			// Apply an instantaneous force depending on direction of gravity
-			if (Physics2D.gravity.y < 0) // Gravity is pulling down, jump up
-				rigidbody2D.AddForce(Vector2.up * jumpStrength, ForceMode2D.Impulse);
-			if (Physics2D.gravity.y > 0) // Gravity is pulling up, jump down
-				rigidbody2D.AddForce(Vector2.down * jumpStrength, ForceMode2D.Impulse);
-			if (Physics2D.gravity.x < 0) // Gravity is pulling left, jump right
-				rigidbody2D.AddForce(Vector2.right * jumpStrength, ForceMode2D.Impulse);
-			if (Physics2D.gravity.x > 0) // Gravity is pulling right, jump left
-				rigidbody2D.AddForce(Vector2.left * jumpStrength, ForceMode2D.Impulse);
+			if (Physics2D.gravity.y == -9.81f) {// Gravity is pulling down, jump up
+				rigidbody2D.AddForce (Vector2.up * jumpStrength, ForceMode2D.Impulse);
+				FindObjectOfType<AudioManager>().Play("Player Jump"); // Plays the audio clip
+			}
+			if (Physics2D.gravity.y == 9.81f) {// Gravity is pulling up, jump down
+				rigidbody2D.AddForce (Vector2.down * jumpStrength, ForceMode2D.Impulse);
+				FindObjectOfType<AudioManager>().Play("Player Jump"); // Plays the audio clip
+			}
+			if (Physics2D.gravity.x == -9.81f) {// Gravity is pulling left, jump right
+				rigidbody2D.AddForce (Vector2.right * jumpStrength, ForceMode2D.Impulse);
+				FindObjectOfType<AudioManager>().Play("Player Jump"); // Plays the audio clip
+			}
+			if (Physics2D.gravity.x == 9.81f) {// Gravity is pulling right, jump left
+				rigidbody2D.AddForce (Vector2.left * jumpStrength, ForceMode2D.Impulse);
+				FindObjectOfType<AudioManager>().Play("Player Jump"); // Plays the audio clip
+			}
 			canJump = !checkGround;
 		}
 	}

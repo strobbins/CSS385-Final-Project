@@ -52,15 +52,21 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CSS 385\Scripts\AttachPlayer.cs" />
+     <Compile Include="Assets\CSS 385\Scripts\AudioManager.cs" />
      <Compile Include="Assets\CSS 385\Scripts\Deathzone.cs" />
+     <Compile Include="Assets\CSS 385\Scripts\DeleteText.cs" />
      <Compile Include="Assets\CSS 385\Scripts\Gravity.cs" />
      <Compile Include="Assets\CSS 385\Scripts\GravitySwap.cs" />
      <Compile Include="Assets\CSS 385\Scripts\MenuD1.cs" />
      <Compile Include="Assets\CSS 385\Scripts\MenuD2.cs" />
      <Compile Include="Assets\CSS 385\Scripts\MenuD3.cs" />
      <Compile Include="Assets\CSS 385\Scripts\MenuPlay.cs" />
+     <Compile Include="Assets\CSS 385\Scripts\MenuReturn.cs" />
+     <Compile Include="Assets\CSS 385\Scripts\OptionsMenuManager.cs" />
      <Compile Include="Assets\CSS 385\Scripts\PendulumPhysics.cs" />
+     <Compile Include="Assets\CSS 385\Scripts\Sound.cs" />
      <Compile Include="Assets\CSS 385\Scripts\Water.cs" />
+     <Compile Include="Assets\CSS 385\Scripts\Winzone.cs" />
      <Compile Include="Assets\UnityPlayground\_INTERNAL_\Scripts\BaseClasses\Action.cs" />
      <Compile Include="Assets\UnityPlayground\_INTERNAL_\Scripts\BaseClasses\ConditionBase.cs" />
      <Compile Include="Assets\UnityPlayground\_INTERNAL_\Scripts\BaseClasses\Physics2DObject.cs" />
