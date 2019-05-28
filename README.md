@@ -8,6 +8,8 @@
 
 **Project working title:** Pachycephalosaurus
 
+**[Game Build](https://strobbins.github.io/CSS385-Final-Project/)**
+
 **[Development Log](https://strobbins.github.io/)**
 
 **[Development Log repository](https://github.com/strobbins/strobbins.github.io)**
