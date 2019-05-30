@@ -39,6 +39,12 @@ public class Move : Physics2DObject
 			moveVertical = Input.GetAxis("Vertical2");
 		}
 
+		// Depending on orientation of gravity will affect which direction the character can move
+		if (Physics2D.gravity.y == -9.81f || Physics2D.gravity.y == 9.81f)
+			moveVertical = 0f;
+		if (Physics2D.gravity.x == -9.81f || Physics2D.gravity.x == 9.81f)
+			moveHorizontal = 0f;
+
 		//zero-out the axes that are not needed, if the movement is constrained
 		switch(movementType)
 		{
@@ -75,10 +81,4 @@ public class Move : Physics2DObject
 			rigidbody2D.AddForce (movement * speed * 10f);
 		}
 	}
-
-	// private void OnTriggerEnter2D(Collider2D other)
-	//{
-	//	if (other.CompareTag ("Water") // If player is touching object
-	//		GetComponent<Rigidbody2D>().drag = 12;
-	//}
 }

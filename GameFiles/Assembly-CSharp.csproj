@@ -64,6 +64,7 @@
      <Compile Include="Assets\CSS 385\Scripts\MenuReturn.cs" />
      <Compile Include="Assets\CSS 385\Scripts\OptionsMenuManager.cs" />
      <Compile Include="Assets\CSS 385\Scripts\PendulumPhysics.cs" />
+     <Compile Include="Assets\CSS 385\Scripts\SlamTrigger.cs" />
      <Compile Include="Assets\CSS 385\Scripts\Sound.cs" />
      <Compile Include="Assets\CSS 385\Scripts\Water.cs" />
      <Compile Include="Assets\CSS 385\Scripts\Winzone.cs" />
