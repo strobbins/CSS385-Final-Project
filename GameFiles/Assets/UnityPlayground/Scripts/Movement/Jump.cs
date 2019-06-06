@@ -5,7 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Jump : Physics2DObject
 {	
-	
+	//[SerializeField] Animator animator;
 	[Header("Jump setup")]
 	// the key used to activate the push
 	public KeyCode key = KeyCode.Space;
@@ -43,12 +43,14 @@ public class Jump : Physics2DObject
 				rigidbody2D.AddForce (Vector2.left * jumpStrength, ForceMode2D.Impulse);
 				FindObjectOfType<AudioManager>().Play("Player Jump"); // Plays the audio clip
 			}
+			//animator.SetBool("IsJumping", true);
 			canJump = !checkGround;
 		}
 	}
 
 	private void OnCollisionEnter2D(Collision2D collisionData) {
 		if(checkGround && collisionData.gameObject.CompareTag(groundTag)) {
+			//animator.SetBool("IsJumping", false);
 			canJump = true;
 		}
 	}
