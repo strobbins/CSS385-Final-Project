@@ -1,10 +1,14 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 [AddComponentMenu("Playground/Movement/Move With Arrows")]
 [RequireComponent(typeof(Rigidbody2D))]
 public class Move : Physics2DObject
 {
+	//[SerializeField] Animator animator;
+
+
 	[Header("Input keys")]
 	public Enums.KeyGroups typeOfControl = Enums.KeyGroups.ArrowKeys;
 
@@ -40,10 +44,14 @@ public class Move : Physics2DObject
 		}
 
 		// Depending on orientation of gravity will affect which direction the character can move
-		if (Physics2D.gravity.y == -9.81f || Physics2D.gravity.y == 9.81f)
+		if (Physics2D.gravity.y == -9.81f || Physics2D.gravity.y == 9.81f) {
 			moveVertical = 0f;
-		if (Physics2D.gravity.x == -9.81f || Physics2D.gravity.x == 9.81f)
+			//animator.SetFloat ("Speed", Mathf.Abs(moveHorizontal));
+		}
+		if (Physics2D.gravity.x == -9.81f || Physics2D.gravity.x == 9.81f) {
 			moveHorizontal = 0f;
+			//animator.SetFloat ("Speed", Mathf.Abs(moveVertical));
+		}
 
 		//zero-out the axes that are not needed, if the movement is constrained
 		switch(movementType)
