@@ -8,6 +8,8 @@
 
 **Project working title:** Pachycephalosaurus
 
+**Name actually used:** Gravity Game
+
 **[Game Build](https://strobbins.github.io/CSS385-Final-Project/)**
 
 **[Development Log](https://strobbins.github.io/)**
