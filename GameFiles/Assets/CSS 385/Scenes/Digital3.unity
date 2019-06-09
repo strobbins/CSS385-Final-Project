@@ -242,61 +242,37 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 701a510cfc08f8e49a29c7a3e556f04c, type: 3}
     volume: 1
     pitch: 1
-    spatialBlend: 0
     loop: 0
-    rolloffMode: 0
-    minDistance: 0
-    maxDistance: 0
     source: {fileID: 0}
   - name: Gravity Flip
     clip: {fileID: 8300000, guid: 4554562120a61dd489add69c4dcfec21, type: 3}
     volume: 1
     pitch: 0.66
-    spatialBlend: 0
     loop: 0
-    rolloffMode: 0
-    minDistance: 0
-    maxDistance: 0
     source: {fileID: 0}
   - name: Menu Button Click
     clip: {fileID: 8300000, guid: 92fb3ba3c50cc744ebc23dd357daa232, type: 3}
     volume: 1
     pitch: 1.62
-    spatialBlend: 0
     loop: 0
-    rolloffMode: 0
-    minDistance: 0
-    maxDistance: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
     volume: 0
     pitch: 0
-    spatialBlend: 0
     loop: 0
-    rolloffMode: 0
-    minDistance: 0
-    maxDistance: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
     volume: 0
     pitch: 0
-    spatialBlend: 0
     loop: 0
-    rolloffMode: 0
-    minDistance: 0
-    maxDistance: 0
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
     volume: 0
     pitch: 0
-    spatialBlend: 0
     loop: 0
-    rolloffMode: 0
-    minDistance: 0
-    maxDistance: 0
     source: {fileID: 0}
 --- !u!4 &265526752
 Transform:
@@ -4059,7 +4035,7 @@ MonoBehaviour:
   rigidbody2D: {fileID: 0}
   typeOfControl: 0
   speed: 2
-  movementType: 0
+  movementType: 1
   orientToDirection: 0
   lookAxis: 0
 --- !u!61 &1096023942
@@ -4814,8 +4790,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2125521855}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.21, y: -4.35, z: 27.484375}
-  m_LocalScale: {x: 71.62752, y: 19.106339, z: 1}
+  m_LocalPosition: {x: 9.34, y: -4.35, z: 27.484375}
+  m_LocalScale: {x: 71.87143, y: 19.106339, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
