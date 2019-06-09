@@ -19,8 +19,5 @@ public class Deathzone : MonoBehaviour {
 			player.GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.None; // Unfreeze movement
 			player.GetComponent<Rigidbody2D> ().constraints = RigidbodyConstraints2D.FreezeRotation; // Refreeze rotation
 		}
-
-		if (col.gameObject.CompareTag (enemyTag)) // For the slamming walls
-			FindObjectOfType<AudioManager>().Play("Slam"); // Plays the audio clip
 	}
 }

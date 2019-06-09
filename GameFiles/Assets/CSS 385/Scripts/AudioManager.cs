@@ -20,12 +20,17 @@ public class AudioManager : MonoBehaviour {
 		}
 		DontDestroyOnLoad (gameObject); // Ensures the AudioManager won't reset the sounds with new scenes
 
+		// All of these are being called from the sounds script
 		foreach (Sound s in sounds) { // For each element in the array of sounds
 			s.source = gameObject.AddComponent<AudioSource> (); // Add audio source component
 			s.source.clip = s.clip; // Clip of audio source
 			s.source.volume = s.volume; // Volume of audio source
 			s.source.pitch = s.pitch; // Pitch of audio source
 			s.source.loop = s.loop; // Option for looping audio
+			s.source.spatialBlend = s.spatialBlend; // Option for 2D vs 3D sound
+			s.source.rolloffMode = s.rolloffMode; // Option for logarithmic or linear sound 
+			s.source.minDistance = s.minDistance; // Set the min distance for sound to be heard
+			s.source.maxDistance = s.maxDistance; // Set max distance for sound
 		}
 	}
 
