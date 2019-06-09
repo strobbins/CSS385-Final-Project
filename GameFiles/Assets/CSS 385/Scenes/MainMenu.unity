@@ -666,16 +666,6 @@ MonoBehaviour:
     minDistance: 10
     maxDistance: 75
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
-    spatialBlend: 0
-    loop: 0
-    rolloffMode: 0
-    minDistance: 0
-    maxDistance: 0
-    source: {fileID: 0}
 --- !u!4 &622506799
 Transform:
   m_ObjectHideFlags: 0
