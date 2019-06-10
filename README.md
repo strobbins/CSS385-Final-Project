@@ -8,7 +8,7 @@
 
 **Project working title:** Pachycephalosaurus
 
-**Name actually used:** Gravity Game
+**Title actually used:** Gravity Game
 
 **Unity version used:** 2017.4.26f1
 
