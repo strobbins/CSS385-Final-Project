@@ -12,6 +12,8 @@
 
 **Unity version used:** 2017.4.26f1
 
+**Game source code:** All source code is located in the GameFiles folder
+
 **[Game Build](https://strobbins.github.io/CSS385-Final-Project/)**
 
 **[Development Log/Website](https://strobbins.github.io/)**
