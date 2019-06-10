@@ -1,23 +1,23 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CSS 385\Scripts\Deathzone.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CSS 385\Scripts\Gravity.cs">
     <Files>
-      <File FileName="Assets\CSS 385\Scripts\PlayerMove.cs" Line="70" Column="6" />
-      <File FileName="Assets\CSS 385\Scripts\PlayerJump.cs" Line="44" Column="4" />
+      <File FileName="Assets\CSS 385\Scripts\PlayerMove.cs" Line="61" Column="22" />
+      <File FileName="Assets\CSS 385\Scripts\PlayerJump.cs" Line="1" Column="1" />
       <File FileName="Assets\UnityPlayground\Scripts\Movement\CameraFollow.cs" Line="1" Column="1" />
-      <File FileName="Assets\CSS 385\Scripts\Gravity.cs" Line="36" Column="30" />
+      <File FileName="Assets\CSS 385\Scripts\Gravity.cs" Line="11" Column="36" />
       <File FileName="Assets\CSS 385\Scripts\AttachPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets\CSS 385\Scripts\Deathzone.cs" Line="21" Column="4" />
+      <File FileName="Assets\CSS 385\Scripts\Deathzone.cs" Line="1" Column="1" />
       <File FileName="Assets\CSS 385\Scripts\GravitySwap.cs" Line="1" Column="1" />
       <File FileName="Assets\CSS 385\Scripts\Sound.cs" Line="1" Column="1" />
       <File FileName="Assets\CSS 385\Scripts\AudioManager.cs" Line="1" Column="1" />
       <File FileName="Assets\CSS 385\Scripts\Winzone.cs" Line="1" Column="1" />
       <File FileName="Assets\CSS 385\Scripts\OptionsMenuManager.cs" Line="1" Column="1" />
       <File FileName="Assets\CSS 385\Scripts\MenuReturn.cs" Line="1" Column="1" />
-      <File FileName="Assets\CSS 385\Scripts\DeleteText.cs" Line="13" Column="42" />
+      <File FileName="Assets\CSS 385\Scripts\DeleteText.cs" Line="1" Column="1" />
       <File FileName="Assets\CSS 385\Scripts\Water.cs" Line="1" Column="1" />
-      <File FileName="Assets\CSS 385\Scripts\SlamTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets\CSS 385\Scripts\ShowUI.cs" Line="22" Column="38" />
+      <File FileName="Assets\CSS 385\Scripts\SlamTrigger.cs" Line="8" Column="47" />
+      <File FileName="Assets\CSS 385\Scripts\ShowUI.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

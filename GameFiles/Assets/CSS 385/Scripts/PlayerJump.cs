@@ -48,7 +48,7 @@ public class PlayerJump : Physics2DObject {
 
 	private void OnCollisionEnter2D(Collision2D collisionData) {
 		if(checkGround && collisionData.gameObject.CompareTag(groundTag)) {
-			//animator.SetBool("IsJumping", false);
+			animator.SetBool("IsJumping", false);
 			canJump = true;
 		}
 	}

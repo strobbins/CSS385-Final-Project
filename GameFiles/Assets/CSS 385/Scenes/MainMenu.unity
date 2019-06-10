@@ -648,7 +648,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Menu Button Click
     clip: {fileID: 8300000, guid: 92fb3ba3c50cc744ebc23dd357daa232, type: 3}
-    volume: 1
+    volume: 0.7
     pitch: 1.62
     spatialBlend: 0
     loop: 0
@@ -658,9 +658,9 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Slam
     clip: {fileID: 8300000, guid: e52e99cb726e85041aa33a1cc713f160, type: 3}
-    volume: 0.08
+    volume: 0.01
     pitch: 0.83
-    spatialBlend: 1
+    spatialBlend: 0
     loop: 0
     rolloffMode: 1
     minDistance: 10

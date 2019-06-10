@@ -39,10 +39,19 @@ public class PlayerMove : Physics2DObject {
 		if (Physics2D.gravity.y == -9.81f || Physics2D.gravity.y == 9.81f) {
 			moveVertical = 0f;
 			animator.SetFloat ("Speed", Mathf.Abs(moveHorizontal));
+			//if (moveHorizontal > 0.01f)
+				// sdfsdfsd
+			//	Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.left);
+			//if (moveHorizontal < 0.01f)
+				// sdfsdfsdf
 		}
 		if (Physics2D.gravity.x == -9.81f || Physics2D.gravity.x == 9.81f) {
 			moveHorizontal = 0f;
 			animator.SetFloat ("Speed", Mathf.Abs(moveVertical));
+			//if (moveVertical > 0.01f)
+			//	sdfks
+			//if (moveVertical < 0.01f)
+			//	dfgdfg
 		}
 
 		//zero-out the axes that are not needed, if the movement is constrained
@@ -58,16 +67,16 @@ public class PlayerMove : Physics2DObject {
 
 		movement = new Vector2(moveHorizontal, moveVertical);
 
-		/*if(movement.sqrMagnitude >= 0.01f) // I THINK THIS IS ON THE RIGHT TRACK TO FIGURING THIS SHIT OUT *********************
-		{
-			transform.eulerAngles = new Vector2 (0, 180);
+		//if(movement.sqrMagnitude >= 0.01f) // I THINK THIS IS ON THE RIGHT TRACK TO FIGURING THIS SHIT OUT *********************
+		//{
+			//transform.eulerAngles = new Vector2 (0, 180);
 			//cachedDirection = movement;
-		}
-		if(movement.sqrMagnitude < 0.01f)
-		{
-			transform.eulerAngles = new Vector2 (0, 0);
+		//}
+		//if(movement.sqrMagnitude < 0.01f)
+		//{
+		//	transform.eulerAngles = new Vector2 (0, 0);
 			//cachedDirection = movement;
-		}*/ // *********************************************************************************************************************
+		//}
 		//rotate the GameObject towards the direction of movement
 		//the axis to look can be decided with the "axis" variable
 		/*if(orientToDirection)
